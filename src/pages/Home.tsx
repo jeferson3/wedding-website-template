@@ -156,7 +156,9 @@ const MobileInvite = () => {
       site: {
          icon: 'fa6-solid:desktop',
          title: 'Nosso site',
-         body: `Acesse ${siteUrl} por um computador para ver a experiência completa.`,
+         body: 'Acesse por um computador para ver a experiência completa.',
+         link: siteUrl,
+         linkLabel: siteUrl.replace(/^https?:\/\//, ''),
       },
    }
    const menuItems = [

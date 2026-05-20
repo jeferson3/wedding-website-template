@@ -126,6 +126,7 @@ type MobileModalContent = {
    title: string
    body: string
    link?: string
+   linkIcon?: string
    linkLabel?: string
 }
 
@@ -158,6 +159,7 @@ const MobileInvite = () => {
          title: 'Nosso site',
          body: 'Acesse por um computador para ver a experiência completa.',
          link: siteUrl,
+         linkIcon: 'fa6-solid:arrow-up-right-from-square',
          linkLabel: siteUrl.replace(/^https?:\/\//, ''),
       },
    }
@@ -462,6 +464,12 @@ const MobileInvite = () => {
                         target="_blank"
                         rel="noreferrer"
                      >
+                        {activeModalData.linkIcon && (
+                           <Icon
+                              icon={activeModalData.linkIcon}
+                              aria-hidden="true"
+                           />
+                        )}
                         {activeModalData.linkLabel}
                      </a>
                   )}

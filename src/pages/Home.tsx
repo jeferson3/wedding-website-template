@@ -18,6 +18,7 @@ const gifts = [
       type: 'Experiências',
       price: 'R$ 280,00',
       pixKey,
+      referenceUrl: null,
       description:
          'Uma contribuição para um jantar especial dos noivos durante a viagem de lua de mel.',
    },
@@ -27,6 +28,7 @@ const gifts = [
       type: 'Lua de mel',
       price: 'R$ 500,00',
       pixKey,
+      referenceUrl: null,
       description:
          'Ajude os noivos a aproveitarem alguns dias de descanso depois da celebração.',
    },
@@ -36,6 +38,7 @@ const gifts = [
       type: 'Casa',
       price: 'R$ 350,00',
       pixKey,
+      referenceUrl: null,
       description:
          'Um presente para deixar a nova casa mais confortável e acolhedora.',
    },
@@ -45,6 +48,7 @@ const gifts = [
       type: 'Experiências',
       price: 'R$ 180,00',
       pixKey,
+      referenceUrl: null,
       description:
          'Uma surpresa para começar um dos dias da viagem com calma e carinho.',
    },
@@ -54,6 +58,7 @@ const gifts = [
       type: 'Casa',
       price: 'R$ 240,00',
       pixKey,
+      referenceUrl: null,
       description: 'Itens úteis para a rotina da cozinha dos noivos.',
    },
    {
@@ -63,6 +68,94 @@ const gifts = [
       price: 'R$ 100,00',
       pixKey,
       description: 'Uma cota simbólica para contribuir com os planos do casal.',
+   },
+   {
+      id: 7,
+      name: 'Air Fryer Electrolux Rita Lobo EAF85 Grafite 12L',
+      type: 'Casa',
+      price: 'R$ 539,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/air-fryer-electrolux-rita-lobo-eaf85-grafite-12l-5311aabr201/p/240428700/ep/efso/?seller_id=magazineluiza',
+      description:
+         'Uma air fryer espaçosa para facilitar o preparo das refeições na casa nova.',
+   },
+   {
+      id: 8,
+      name: 'Lençol Queen 3 peças Fronhas c/ Abas Percal Flex 400 Fios Toque Macio',
+      type: 'Casa',
+      price: 'R$ 59,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/lencol-queen-3-pecas-fronhas-c-abas-percal-flex-400-fios-toque-macio-40-cm-de-altura-rafaloro-enxovais/p/jj9ga59jc6/cm/lenc/?&seller_id=rafalorohome&utm_source=google&utm_medium=cpc&utm_term=84443&utm_campaign=google_eco_per_ven_pla_uti_sor_3p_cm-dec-ud-b-0326&utm_content=&partner_id=84443&gclsrc=aw.ds&gad_source=1&gad_campaignid=23594848050&gbraid=0AAAAAD4zZmRQW7eRnpR3PDHkjy9fp34H5&gclid=CjwKCAjwmJjSBhB-EiwAkZgxi9exfJ2tNhIRIt9Nx3wq1B_32U9xxaCjAPliieIfwxvfq7zEsjk0xxoC2r4QAvD_BwE',
+      description:
+         'Um jogo de lençol queen macio para completar o enxoval dos noivos.',
+   },
+   {
+      id: 9,
+      name: 'Lava-Louça Electrolux 8 Serviços Inox com Programa Lava & Seca 50 min',
+      type: 'Casa',
+      price: 'R$ 2.249,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/lava-louca-electrolux-8-servicos-inox-com-programa-lava-seca-50-min-ls08e/p/dghb13dfh2/ed/l08s/?&seller_id=electrolux&utm_source=google&utm_medium=cpc&utm_term=84407&utm_campaign=google_eco_per_ven_pla_ele_apo_3p_ed1-ed2-0326&utm_content=&partner_id=84407&gclsrc=aw.ds&gad_source=1&gad_campaignid=23600305193&gbraid=0AAAAAD4zZmTHYx6JaXj3NfXl1OHXqOQXm&gclid=CjwKCAjwmJjSBhB-EiwAkZgxi7j7zFjpeueNLYZdol37QXjrSamVRW5qS3xUwA_EoTrlFPipU_QosBoCcDEQAvD_BwE',
+      description:
+         'Uma lava-louças compacta para tornar a rotina da casa mais prática.',
+   },
+   {
+      id: 10,
+      name: 'Mixer 3 em 1 Electrolux Vermelho Escuro 600W Haste em Inox e Tecnologia TruFlow',
+      type: 'Casa',
+      price: 'R$ 249,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/mixer-3-em-1-electrolux-vermelho-escuro-600w-haste-em-inox-e-tecnologia-truflow-eib21/p/fgb468a2b1/ep/mixr/?&seller_id=electrolux&utm_source=google&utm_medium=cpc&utm_term=84399&utm_campaign=google_eco_per_ven_pla_arp_sor_3p_ep-a-0326&utm_content=&partner_id=84399&gclsrc=aw.ds&gad_source=1&gad_campaignid=23605403218&gbraid=0AAAAAD4zZmQUGQUXqeFA0QsR20DBapky1&gclid=CjwKCAjwmJjSBhB-EiwAkZgxi5-QdrfVFKe2AqtPRfsI7y8DHQV-XsxN4tt6VjY5Wm-lZv6xtagyThoCVOwQAvD_BwE',
+      description:
+         'Um mixer versátil para ajudar nos preparos do dia a dia.',
+   },
+   {
+      id: 11,
+      name: 'Kit 4 Toalhas Luxo Flabom 2 Banho + 2 Rosto 100% Algodão Premium',
+      type: 'Casa',
+      price: 'R$ 84,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/kit-4-toalhas-luxo-flabom-2-banho-2-rosto-100-algodao-premium-alta-absorcao-e-toque-aveludado-flabom-textil/p/he1f19bah7/cm/joto/?&seller_id=rodrigoalbertomenegaz&utm_source=google&utm_medium=cpc&utm_term=84443&utm_campaign=google_eco_per_ven_pla_uti_sor_3p_cm-dec-ud-b-0326&utm_content=&partner_id=84443&gclsrc=aw.ds&gad_source=1&gad_campaignid=23594848050&gbraid=0AAAAAD4zZmRQW7eRnpR3PDHkjy9fp34H5&gclid=CjwKCAjwmJjSBhB-EiwAkZgxiwrKvfEnW-_FWYhOuIMyYnMq2o6AsKvDVUhDe2e4dAroyNOQiaSCYxoCVzYQAvD_BwE',
+      description:
+         'Um kit de toalhas de banho e rosto para completar o enxoval.',
+   },
+   {
+      id: 12,
+      name: 'Micro-ondas Electrolux 23L Prata Efficient',
+      type: 'Casa',
+      price: 'R$ 679,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/micro-ondas-electrolux-23l-prata-efficient-me23s/p/235613600/ed/mond/?&seller_id=magazineluiza&utm_source=google&utm_medium=cpc&utm_term=84368&utm_campaign=google_eco_per_ven_pla_ele_sor_1p_ed1-0326&utm_content=&partner_id=84368&gclsrc=aw.ds&gad_source=1&gad_campaignid=23594641914&gbraid=0AAAAAD4zZmRZeq4tldp2SD-OVjq5WBEtT&gclid=CjwKCAjwmJjSBhB-EiwAkZgxi5c9MsIVSBQgqwFCTuSsK_wKiWpVJSR1gyHNYFVffdXTBqH4LnP--xoCTcMQAvD_BwE',
+      description:
+         'Um micro-ondas prático para facilitar a rotina da cozinha.',
+   },
+   {
+      id: 13,
+      name: 'Geladeira Frost Free Electrolux Inverter 480L Preto',
+      type: 'Casa',
+      price: 'R$ 5.399,00',
+      pixKey,
+      referenceUrl:
+         'https://www.magazineluiza.com.br/geladeira-frost-free-electrolux-inverter-480l-preto-im7b/p/bd55f7gj18/ed/ref2/?seller_id=angeloni2&region_id=123471&utm_source=google&utm_medium=cpc&utm_term=84409&utm_campaign=google_eco_per_ven_pla_ele_sor_3p_ed1-ed2-b-0326&utm_content=&partner_id=84409&gclsrc=aw.ds&gad_source=1&gad_campaignid=23600284448&gbraid=0AAAAAD4zZmQVSHVXYd-QaK_EGdgeNh533&gclid=CjwKCAjwmJjSBhB-EiwAkZgxi6eLB-cQ68GUxOox0ruJ5a0EdZmv3qEVQsxgQZBXJuV8INpsDJd9lBoCClsQAvD_BwE',
+      description:
+         'Uma geladeira frost free para equipar a cozinha da casa nova.',
+   },
+   {
+      id: 14,
+      name: 'Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças',
+      type: 'Casa',
+      price: 'R$ 504,00',
+      pixKey,
+      referenceUrl:
+         'https://shopee.com.br/product/822103155/19298100222?d_id=ce062&uls_trackid=561pmdmc020a&utm_content=4Yv7Zv8gwsRUHMEbfobNoRtPjiBh',
+      description:
+         'Um aparelho de jantar e chá para receber bem e montar a mesa dos noivos.',
    },
 ]
 
@@ -277,7 +370,23 @@ const MobileInvite = () => {
                      <small>{selectedMobileGift.type}</small>
                      <h2>{selectedMobileGift.name}</h2>
                      <p>{selectedMobileGift.description}</p>
-                     <strong>{selectedMobileGift.price}</strong>
+                     <div className="mobile-action-modal__gift-actions">
+                        <strong>{selectedMobileGift.price}</strong>
+                        {selectedMobileGift.referenceUrl && (
+                           <a
+                              className="mobile-action-modal__link"
+                              href={selectedMobileGift.referenceUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                           >
+                              <Icon
+                                 icon="fa6-solid:arrow-up-right-from-square"
+                                 aria-hidden="true"
+                              />
+                              Ver exemplo
+                           </a>
+                        )}
+                     </div>
                      <div className="mobile-action-modal__pix">
                         <span>Chave Pix</span>
                         <div>
@@ -854,9 +963,25 @@ export const HomePage = () => {
                      <span>{selectedGift.type}</span>
                      <h2 id="gift-modal-title">{selectedGift.name}</h2>
                      <p>{selectedGift.description}</p>
-                     <strong className="gift-modal__price">
-                        {selectedGift.price}
-                     </strong>
+                     <div className="gift-modal__gift-actions">
+                        <strong className="gift-modal__price">
+                           {selectedGift.price}
+                        </strong>
+                        {selectedGift.referenceUrl && (
+                           <a
+                              className="gift-modal__reference"
+                              href={selectedGift.referenceUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                           >
+                              <Icon
+                                 icon="fa6-solid:arrow-up-right-from-square"
+                                 aria-hidden="true"
+                              />
+                              Ver exemplo do presente
+                           </a>
+                        )}
+                     </div>
                      <div className="gift-modal__payment">
                         <img
                            className="gift-qr"

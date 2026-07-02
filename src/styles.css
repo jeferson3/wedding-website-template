@@ -436,7 +436,9 @@ a {
 }
 
 .gift-card {
-   min-height: 162px;
+   display: flex;
+   height: 190px;
+   flex-direction: column;
    border: 1px solid var(--line);
    padding: 18px;
    background: #fffdfb;
@@ -450,26 +452,35 @@ a {
 }
 
 .gift-card span {
-   margin-bottom: 14px;
+   margin-bottom: 12px;
    color: var(--muted);
    font-family: 'Raleway Flex', Arial, sans-serif;
    font-size: 9px;
    font-weight: 700;
+   line-height: 1.4;
    letter-spacing: 0.16em;
    text-transform: uppercase;
 }
 
 .gift-card strong {
-   margin-bottom: 20px;
+   display: -webkit-box;
+   overflow: hidden;
+   min-height: 0;
+   margin-bottom: 16px;
    font-family: 'Raleway Flex', Arial, sans-serif;
    font-size: 15px;
-   line-height: 1.35;
+   line-height: 1.45;
    letter-spacing: 0.08em;
+   overflow-wrap: anywhere;
    text-transform: uppercase;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
 }
 
 .gift-card small {
+   margin-top: auto;
    font-size: 13px;
+   line-height: 1.4;
 }
 
 .gift-card:hover {
@@ -523,6 +534,47 @@ a {
    font-family: 'Raleway Flex', Arial, sans-serif;
    font-size: 26px;
    letter-spacing: 0.08em;
+}
+
+.gift-modal__gift-actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 14px;
+   align-items: center;
+   margin: 24px 0;
+   justify-content: space-between;
+}
+
+.gift-modal__gift-actions .gift-modal__price {
+   margin: 0;
+}
+
+.gift-modal__reference {
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   justify-content: center;
+   min-height: 42px;
+   border: 1px solid var(--line);
+   padding: 0 18px;
+   color: var(--ink);
+   background: #fffdfb;
+   font-family: 'Raleway Flex', Arial, sans-serif;
+   font-size: 11px;
+   font-weight: 700;
+   letter-spacing: 0.12em;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.gift-modal__reference:hover {
+   border-color: var(--ink);
+}
+
+.gift-modal__reference svg {
+   width: 13px;
+   height: 13px;
+   flex: 0 0 auto;
 }
 
 .gift-modal__payment {
@@ -1101,7 +1153,6 @@ hr {
       gap: 8px;
       justify-content: center;
       min-height: 42px;
-      margin-top: 22px;
       border: 1px solid rgb(70 65 51 / 28%);
       border-radius: 999px;
       padding: 0 18px;
@@ -1121,6 +1172,15 @@ hr {
       flex: 0 0 auto;
    }
 
+   .mobile-action-modal__gift-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 18px;
+   }
+
    .mobile-action-modal__content small {
       display: block;
       margin-bottom: 8px;
@@ -1133,7 +1193,7 @@ hr {
 
    .mobile-action-modal__content strong {
       display: block;
-      margin-top: 18px;
+      margin: 0;
       font-family: 'Raleway Flex', Arial, sans-serif;
       font-size: 21px;
       letter-spacing: 0.06em;

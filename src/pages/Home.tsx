@@ -159,6 +159,14 @@ const gifts = [
    },
 ]
 
+const getGiftPriceValue = (price: string) =>
+   Number(price.replace('R$', '').trim().replace(/\./g, '').replace(',', '.'))
+
+const sortedGifts = [...gifts].sort(
+   (currentGift, nextGift) =>
+      getGiftPriceValue(currentGift.price) - getGiftPriceValue(nextGift.price),
+)
+
 const getCountdown = () => {
    const remainingTime = Math.max(weddingDate.getTime() - Date.now(), 0)
    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24))
@@ -313,11 +321,11 @@ const MobileInvite = () => {
                   Voltar
                </button>
                <h1>Lista de presentes</h1>
-               <p>Escolha um presente ou uma cota simbólica para os noivos.</p>
+               <p>Nossa lista de presentes é simbólica. Se desejar nos presentear, escolha uma cota e faça sua contribuição via Pix. Cada contribuição nos ajudará a construir nosso lar.</p>
             </div>
 
             <div className="mobile-gifts-page__list">
-               {gifts.map((gift) => (
+               {sortedGifts.map((gift) => (
                   <button
                      key={gift.id}
                      className="mobile-gift-card"
@@ -596,7 +604,7 @@ export const HomePage = () => {
    const [selectedType, setSelectedType] =
       useState<(typeof giftTypes)[number]>('Todos')
    const [showBackToTop, setShowBackToTop] = useState(false)
-   const filteredGifts = gifts.filter(
+   const filteredGifts = sortedGifts.filter(
       (gift) => selectedType === 'Todos' || gift.type === selectedType,
    )
 

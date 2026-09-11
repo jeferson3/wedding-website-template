@@ -925,6 +925,14 @@ hr {
       line-height: 1.35;
    }
 
+   .mobile-invite__memorial {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 8px;
+      font-style: italic;
+      line-height: 1.25;
+   }
+
    .mobile-invite__message {
       width: min(326px, 100%);
       margin: 0 auto;

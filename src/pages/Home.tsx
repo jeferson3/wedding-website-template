@@ -453,7 +453,12 @@ const MobileInvite = () => {
                   <span>{siteConfig.partners.first.mother}</span>
                </div>
                <div>
-                  <span>{siteConfig.partners.second.father}</span>
+                  <span>
+                     José Bezerra do Nascimento
+                     <small className="mobile-invite__memorial">
+                        (Em memória)
+                     </small>
+                  </span>
                   <span>{siteConfig.partners.second.mother}</span>
                </div>
             </div>

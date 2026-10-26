@@ -247,6 +247,8 @@ const MobileInvite = () => {
          icon: 'fa6-solid:church',
          title: 'Cerimônia',
          body: `${siteConfig.ceremony.location} • ${siteConfig.ceremony.time}`,
+         link: siteConfig.ceremonyMap.link,
+         linkLabel: 'Abrir no Maps',
       },
       reception: {
          icon: 'fa6-solid:location-dot',
